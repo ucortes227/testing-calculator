@@ -1,0 +1,24 @@
+<div class="formula px-4 py-0">
+    <span class="text-primary">
+        <h4 class="text-center px-4 pb-5 m-0">{{ v }} = {{ r }} • {{ i }} </h4>
+    </span>
+    <form class="row gy-2 gx-3 align-items-center justify-content-center">
+        <div class="col-auto">
+            <div class="input-group">
+                <div class="input-group-text">R</div>
+                <input [(ngModel)]="r" type="number" class="form-control" id="inputresistencia" 
+                    placeholder="Resistencia eléctrica" name="resistencia" min="1">
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="input-group">
+                <div class="input-group-text">I</div>
+                <input [(ngModel)]="i" type="number" class="form-control" id="inputintensidad"
+                    placeholder="Intensidad de corriente" name="intensidad" min="1">
+            </div>
+        </div>
+        <div class="col-auto">
+            <button (click)="calcular()" type="submit" class="btn btn-primary" name="res">Calcular</button>
+        </div>
+    </form>
+</div>
