@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// import { ohm } from '../test/ohm.component';
+import { ohm } from '../test/ohm.component';
 
 @Component({
   selector: 'app-ui',
@@ -20,7 +20,7 @@ export class UiComponent implements OnInit {
   resultado: any = ''
 
   calcular() {
-    // this.resultado = ohm(this.r, this.i)
+    this.resultado = ohm(this.r, this.i)
     
     this.v = this.resultado + ' v'
   }
